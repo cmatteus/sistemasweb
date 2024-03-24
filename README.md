@@ -10,4 +10,4 @@ Este repositório é destinado aos meu projetos feitos para suprir as demandas d
 
 > OBSERVAÇÕES:
   - Os arquivios estão na branche master **(trocar main > master)**.
-  - A V 1.0 da Landing Page já está **online** em https://sistemasweb.cauamatteus.com as demais páginas podem ser encontradas por lá.
+  - A V 2.0 da Landing Page já está **online** em https://sistemasweb.cauamatteus.com as demais páginas podem ser encontradas por lá.
