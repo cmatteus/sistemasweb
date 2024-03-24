@@ -3,7 +3,7 @@ Este repositório é destinado aos meu projetos feitos para suprir as demandas d
 
 > CONTROLE DE VERSÕES:
   - **Landing Page**
-      - **V 1.0** - 23/03/2024 às 23:00 | Adição de todos os arquivos da versão.
+      - **V 1.0** - 23/03/2024 às 22:54 | Adição de todos os arquivos da versão.
   - **Página de Login**
       - **V 1.0** - 23/03/2024 às xx:xx | Adição de todos os arquivos da versão.
 
