@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* 1. [ESTILIZAÇÃO GERAL] */
+
+/* 1.1. [ESTILIZAÇÃO GERAL] > geral */
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #000005;
+    color: #FFF;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 1. [ESTILIZAÇÃO DA INDEX] */
+
+/* 2.1. [ESTILIZAÇÃO DA INDEX] > Geral */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2.2. [ESTILIZAÇÃO DA INDEX] > Header */
+
+.header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > h1 {
+    letter-spacing: 15px;
+    text-shadow: 2px 2px 4px #40D0D0;
+}
+
+/* 2.3. [ESTILIZAÇÃO DA INDEX] > Main */
+
+.main {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2.3.1. [ESTILIZAÇÃO DA INDEX] > Main > Carrosel */
+
+.carrosel-bootstrap {
+    width: 1000px;
+    height: 500px;
+}
+
+/* 2.4. [ESTILIZAÇÃO DA INDEX] > Footer */
+
+.footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.autor {
+    color: #40D0D0;
+    font-weight: bold;
+}
+
+.redessociais {
+    width: 15vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+.redessociais > a > i:hover {
+    color: #40D0D0;
+    cursor: pointer;
+}
+
+.direitos {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+    margin-left: -15vw;
+}

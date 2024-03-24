@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* 1. [ESTILIZAÇÃO GERAL] */
+
+/* 1.1. [ESTILIZAÇÃO GERAL] > Corpo da Página */
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    background-color: #000005;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 1.1.1.1. [ESTILIZAÇÃO GERAL] > Corpo da Página > Card de Formulário > Cabeçalho */
+
+.card-form {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #40d0d018;
+}
+
+.header-card-form {
+    width: 400px;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-card-form > img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.esfera {
+    width: 170px;
+    height: 170px;
+    background-color: #000005;
+    border-radius: 50%;
+    position: relative;
+    top: -50%;
+    left: 0%;
+    z-index: 0;
+}
+
+/* 1.1.1.1.1. [ESTILIZAÇÃO GERAL] > Corpo da Página > Card de Formulário > Cabeçalho > Menu Suspenso */
+
+.menu-sobre {
+    position: absolute;
+    left: 20px;
+    top: 30%;
+    transform: translateY(-50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #40D0D0;
+    border-radius: 20px;
+}
+
+.menu-sobre:hover {
+    background-color: #40D0D0;
+}
+
+.menu-sobre > li {
+    position: relative;
+}
+
+.menu-sobre > li > a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu-sobre .submenu {
+    width: 100px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #40d0d018;
+    padding: 0;
+}
+
+.menu-sobre .submenu li {
+    display: block;
+}
+
+.menu-sobre .submenu li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-size: 10px;
+}
+
+.menu-sobre > li:hover .submenu {
+    display: block;
+}
+
+/* 1.1.1.2. [ESTILIZAÇÃO GERAL] > Corpo da Página > Card de Formulário > Principal */
+
+.main-card-form {
+    width: 400px;
+    height: 350px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.main-card-form > h1 {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #40D0D0;
+    letter-spacing: 15px;
+}
+
+/* 1.1.1.2.1 [ESTILIZAÇÃO GERAL] > Corpo da Página > Card de Formulário > Principal > Campos/Botões */
+
+.form-login {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputGroup {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.inputGroup input {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inputGroup label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    color: #777;
+}
+
+.inputGroup input:focus + label, .inputGroup input:valid + label {
+    top: -15px;
+    font-size: 12px;
+    color: #40D0D0;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #40d0d000;
+    border-color: #40D0D0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+   
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+ }
+
+#cadastrar {
+    background-color: #40d0d0;
+    border: none;
+}
+   
+button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+   
+button:hover span {
+    padding-right: 15px;
+}
+   
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+ }
+
+ .esqueceu-senha {
+    width: 300px;
+    display: flex;
+    justify-content: right;
+    margin-top: -50px;
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+ }
+
+ .esqueceu-senha > a {
+    color: #FFF;
+ }
+
+ /* 1.1.1.3 [ESTILIZAÇÃO GERAL] > Corpo da Página > Card de Formulário > Rodapé */
+
+ .footer-card-form {
+    font-size: 13px;
+ }
+
+ .autor {
+    color: #40D0D0;
+    font-weight: bold;
+ }
+
+/* 2. [PÁGINA DE CADASTRO]*/
+
+/* 2.1. [PÁGINA DE CADASTRO] > Corpo da Página*/
+
+/* 2.1.1. [PÁGINA DE CADASTRO] > Corpo da Página > Card de Formulário*/
+
+.card-form-cadastro {
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #40d0d018;
+}
+
+/* 2.1.1.1. [PÁGINA DE CADASTRO] > Corpo da Página > Card de Formulário > Cabeçalho*/
+
+/* 2.1.1.1.1. [PÁGINA DE CADASTRO] > Corpo da Página > Card de Formulário > Cabeçalho > Menu Suspenso */
+
+.menu-conta {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translateY(-50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #40D0D0;
+    border-radius: 20px;
+}
+
+.menu-conta:hover {
+    background-color: #40D0D0;
+}
+
+.menu-conta > li {
+    position: relative;
+}
+
+.menu-conta > li > a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.submenu-conta {
+    width: 100px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #40d0d018;
+    padding: 0;
+}
+
+.submenu-conta li {
+    display: block;
+}
+
+.submenu-conta li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-size: 10px;
+}
+
+.menu-conta:hover .submenu-conta {
+    display: block;
+}
+
+/* 2.1.1.2. [PÁGINA DE CADASTRO] > Corpo da Página > Card de Formulário > Principal */
+
+.campo-senha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.inputGroup-senha {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+/* 2.1.1.2.1. [PÁGINA DE CADASTRO] > Corpo da Página > Card de Formulário > Principal > Campos/Botões */
+
+#cadastrar-cad {
+    background-color: #40d0d0;
+    border: none;
+}
+
+ /* 2.1.1.3 [ESTILIZAÇÃO GERAL] > Corpo da Página > Card de Formulário > Rodapé */
+
+ .footer-card-form-cadastro {
+    font-size: 13px;
+    margin-top: 50px;
+ }
