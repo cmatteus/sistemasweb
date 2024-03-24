@@ -4,6 +4,7 @@ Este repositório é destinado aos meu projetos feitos para suprir as demandas d
 > CONTROLE DE VERSÕES:
   - **Landing Page**
       - **V 1.0** - 23/03/2024 às 22:54 | Adição de todos os arquivos da versão.
+      - **V 2.0** - 24/03/2024 às 19:20 | Adição de todos os arquivos da versão.
   - **Página de Login**
       - **V 1.0** - 23/03/2024 às 22:54 | Adição de todos os arquivos da versão.
 
