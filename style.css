@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
-/* 1. [ESTILIZAÇÃO GERAL] */
-
-/* 1.1. [ESTILIZAÇÃO GERAL] > geral */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    font-family: 'Merriweather', serif;
-    background-color: #000005;
-    color: #FFF;
     margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -16,94 +13,194 @@ a {
     color: inherit;
 }
 
-/* 1. [ESTILIZAÇÃO DA INDEX] */
-
-/* 2.1. [ESTILIZAÇÃO DA INDEX] > Geral */
-
 .container {
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 2.2. [ESTILIZAÇÃO DA INDEX] > Header */
-
-.header {
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
-.header > h1 {
-    letter-spacing: 15px;
-    text-shadow: 2px 2px 4px #40D0D0;
-}
-
-/* 2.3. [ESTILIZAÇÃO DA INDEX] > Main */
 
 .main {
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
+    background-image: url('midia/background.png');
+    background-size: 100% 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: #FFF;
 }
 
-/* 2.3.1. [ESTILIZAÇÃO DA INDEX] > Main > Carrosel */
-
-.carrosel-bootstrap {
-    width: 1000px;
-    height: 500px;
-}
-
-/* 2.4. [ESTILIZAÇÃO DA INDEX] > Footer */
-
-.footer {
-    width: 100vw;
-    height: 10vh;
+.menu-lateral {
+    width: 10vw;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    gap: 10px;
+}
+
+.menu-lateral > a > i:hover {
+    color: #40D0D0;
+}
+
+.left-main {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .autor {
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: -15%;
+}
+
+.autor > i {
+    font-size: 30px;
+}
+
+.autor > h2 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.titulo {
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+}
+
+.left-main > a > button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: transparent;
+    font-weight: bold;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.left-main > a > button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.right-main {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.slider {
+    width: 70vw;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    text-align: justify;
+    background-color: #CFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+    color: #000005;
+}
+
+.item > p {
+    font-size: 15px;
+}
+
+.item > h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.item > img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.item > a {
+    text-align: center;
+}
+
+.item > a > p > i {
     color: #40D0D0;
     font-weight: bold;
 }
 
-.redessociais {
-    width: 15vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-size: 30px;
-    letter-spacing: 15px;
-}
-
-.redessociais > a > i:hover {
+.item > a > p:hover {
     color: #40D0D0;
-    cursor: pointer;
 }
 
-.direitos {
+#next, #prev {
+    position: absolute;
+    top: 40%;
+    color: #40D0D0;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 150px;
+}
+
+#next {
+    left: unset;
+    right: 50px;
+}
+
+.footer {
     width: 100vw;
     height: 10vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: -1;
-    margin-left: -15vw;
+    align-items: center;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #40D0D0;
 }
